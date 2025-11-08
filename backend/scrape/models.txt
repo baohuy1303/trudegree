@@ -8,4 +8,9 @@ Letter Portrait:
     gpt-4.1-mini: T1: 2m -> Very good no missing info || T2: 1m39s -> Req are now marked IP, just some minor naming changes but still the same thing as T1
     gpt-4.1-nano: T1: 37s -> Missing critical info
     gpt-4.1: T1: 1m17s -> Very good, extra fields like credits etc... filled out
-    
+
+    gpt-5-nano lowReasoningVerbose: 16s
+    gpt-5-nano Base: 3m10s -> Missing a lot
+    gpt-5-nano lowReason: 1m3s -> Missing a lot
+
+    gpt-5-mini lowReason: 88s -> Good caputures all info || T2:

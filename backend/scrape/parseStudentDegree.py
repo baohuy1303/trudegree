@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from openai.types.shared import reasoning_effort
 load_dotenv()
 from langchain_community.document_loaders import PyPDFLoader
 from pydantic import BaseModel, Field, RootModel
@@ -13,7 +14,9 @@ from pydantic import RootModel
 from enum import Enum
 from timeit import default_timer as timer
 
-llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4.1-mini", temperature=0.0)
+#llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4.1-mini", temperature=0.0)
+
+llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-5-mini", reasoning_effort="low")
 
 class Status(str, Enum):
     COMPLETE = "Complete"
@@ -133,7 +136,7 @@ end = timer()
 time_taken = end - start
 output_dir = "parsedDegree"
 os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "gpt4.1_mini-letterP-FinalTest.json")
+output_path = os.path.join(output_dir, "gpt5_mini-lowReason-T2.json")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(valid_json_str)
 print(f"Time taken: {time_taken}")
