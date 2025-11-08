@@ -118,7 +118,7 @@ def parsePlan(text):
     # 6. Output
     print(json.dumps(parsed_plan, indent=2))
 
-    return parsed_plan
+    return json.dumps(parsed_plan, indent=2)
 
 
 def split_dom_content(dom_content, max_length=6000):
