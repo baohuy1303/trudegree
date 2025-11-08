@@ -1,0 +1,245 @@
+{
+  "program": "Computer Science (BS)",
+  "semesters": [
+    {
+      "semester": "Semester 1",
+      "courses": [
+        {
+          "code": "TRU 120",
+          "name": "First Year Seminar",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 100",
+          "name": "Computer Science Seminar",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "code": "CS 180",
+          "name": "Foundations of Computer Science I",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "code": "MATH 198",
+          "name": "Analytic Geometry and Calculus I",
+          "credits": 5,
+          "note": ""
+        },
+        {
+          "raw": "- Elementary Foreign Language I (**) (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 2",
+      "courses": [
+        {
+          "code": "CS 181",
+          "name": "Foundations of Computer Science II",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 191",
+          "name": "Computing Structures",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "MATH 263",
+          "name": "Analytic Geometry and Calculus II",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "raw": "- Elementary Foreign Language II (**) (3 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 3",
+      "courses": [
+        {
+          "code": "CS 250",
+          "name": "Systems Programming",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 260",
+          "name": "Object-Oriented Programming and Design",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- CS 291: Models of Computation"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 4",
+      "courses": [
+        {
+          "code": "CS 310",
+          "name": "Data Structures and Algorithms",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 330",
+          "name": "Computer Architecture and Organization",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 291",
+          "name": "Models of Computation",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        },
+        {
+          "raw": "- Required Support Course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 5",
+      "courses": [
+        {
+          "code": "CS XXX",
+          "name": "One elective from Area A, B, or C (***)",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- JINS 3XX: WE/____________ (3 cr)"
+        },
+        {
+          "raw": "- BS Requirement (3 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 6",
+      "courses": [
+        {
+          "code": "CS XXX",
+          "name": "One elective from Area A, B, or C (***)",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 345",
+          "name": "WE/Cyberethics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "STAT 290",
+          "name": "Statistics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Elective (3 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 7",
+      "courses": [
+        {
+          "code": "CS 495",
+          "name": "Senior Computer Science Seminar",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "code": "CS XXX",
+          "name": "One or two electives from Area A, B, or C (***)",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Elective (3 cr)"
+        },
+        {
+          "raw": "- BS Requirement (3 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 8",
+      "courses": [
+        {
+          "code": "CS XXX",
+          "name": "One or two electives from Area A, B, or C (***)",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- CS 495: Senior Computer Science Seminar"
+        },
+        {
+          "raw": "- Elective(s) (3-6 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    }
+  ],
+  "electives": {
+    "area_a": [
+      "CS 315: Internet Programming",
+      "CS 370: WE/Software Engineering",
+      "and CS 430: Database Systems"
+    ],
+    "area_b": [
+      "CS 390: Operating Systems",
+      "CS 420: Compilers",
+      "CS 435: Parallel and Distributed Processing",
+      "CS 455: Computer Security Fundamentals",
+      "and CS 470: Computer Networks"
+    ],
+    "area_c": [
+      "CS 325: Introduction to Bioinformatics",
+      "CS 380: WE/Programming Languages",
+      "CS 420: Compilers",
+      "430: Database Systems",
+      "CS 435: Parallel and Distributed Processing",
+      "CS 455: Computer Security Fundamentals",
+      "CS 460: Computer Graphics",
+      "CS 480: WE/Artiﬁcial Intelligence",
+      "and CS 490: Automata Theory and Formal Languages"
+    ]
+  },
+  "notes": [
+    "Foreign Language: Can be taken any semester, but Elementary II proﬁciency is required for BS degree",
+    "Foreign Language: Can be taken any semester, but Elementary II proﬁciency is required for BS degree",
+    "Foreign Language: Can be taken any semester, but Elementary II proﬁciency is required for BS degree",
+    "Portfolio required",
+    "Civics Exam recommended in first year"
+  ]
+}

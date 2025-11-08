@@ -1,0 +1,9 @@
+{
+    "student_profile": {
+    "completed_courses": ["CS 100", "MATH 198"],
+    "remaining_major": ["CS 180", "CS 181"],
+    "remaining_dialogues": {"Social": 3, "Arts & Humanities": 6},
+    "current_semester": 3,
+    "planned_courses": []
+}
+}
