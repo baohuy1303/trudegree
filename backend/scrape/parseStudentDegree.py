@@ -98,7 +98,7 @@ def load_pdf():
 
 prompt = PromptTemplate(
     template=(
-        "You are an academic record parser that extracts structured data from a DegreeWorks audit.\n"
+        "You are an expert academic record parser that extracts structured data from DegreeWorks audit PDFs.\n"
         "Your goal is to convert the provided text into valid JSON following the DegreeWorksProfile model.\n\n"
         "Instructions:\n"
         "- Identify the student's basic information (name, ID, degree, program, catalog year, classification, GPA, etc.).\n"
@@ -108,9 +108,10 @@ prompt = PromptTemplate(
         "- Preserve the hierarchy: Student → DegreeInfo → Blocks → Requirements → Courses.\n"
         "- If a requirement name exactly matches a block title, do NOT treat it as a requirement. Instead, store it as a reference note (e.g. 'See [BlockTitle] block below') and continue parsing the other blocks normally.\n"
         "- If a requirement name matches a known block title, set 'is_reference_only' to true and add a 'details' note saying 'See [BlockTitle] block below.'\n"
-        "- For missing values, return null.\n\n"
+        "- For missing values, return null.\n"
+        "- Pay special attention to the `Required Support & Requirements` and `STEM Perspective` blocks, parse all the requirements thoroughly.\n"
         "{format_instructions}\n\n"
-        "Text:\n{context}"
+        "RAW TEXT TO PARSE:\n{context}"
     ),
     input_variables=["context"],
     partial_variables={"format_instructions": parser.get_format_instructions()},
@@ -126,6 +127,6 @@ student_profile : StudentProfile = result
 valid_json_str = json.dumps(student_profile, ensure_ascii=False, indent=2)
 output_dir = "parsedDegree"
 os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "student_profile_fixed_3.json")
+output_path = os.path.join(output_dir, "student_profile_fixed_5.json")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(valid_json_str)

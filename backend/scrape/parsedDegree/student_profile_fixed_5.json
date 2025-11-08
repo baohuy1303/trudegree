@@ -1,0 +1,867 @@
+{
+  "name": "Huynh, Huy B.",
+  "student_id": "*****3513",
+  "audit_date": "2025-10-28T17:33:00",
+  "degree_info": {
+    "degree": "Bachelor of Science",
+    "program": "CS BS",
+    "major": "Computer Science",
+    "minor": "Data Science",
+    "college": "Sch of Science and Math",
+    "classification": "Freshman",
+    "level": "Undergraduate",
+    "catalog_year": "2025-2026",
+    "degree_status": "INCOMPLETE",
+    "required_credits": 120,
+    "applied_credits": 31,
+    "gpa": 0.0
+  },
+  "blocks": [
+    {
+      "title": "Degree Status",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [],
+      "description": "The 'Application to Graduate' is a one time application process. Your graduation application will be reviewed after submitting via TruView. If you make changes after your application has been reviewed, please notify the Registrar's Office. In order for your degree to be awarded, all coursework must be successfully completed and all outstanding graduation requirements met. If your degree has been awarded please disregard."
+    },
+    {
+      "title": "Civics Exam",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [],
+      "description": "Civics Exam must be passed prior to graduation."
+    },
+    {
+      "title": "Disciplinary Perspectives",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Communication Skills Perspective",
+          "status": "Incomplete",
+          "details": "See Communication Skills Perspective section",
+          "is_reference_only": true,
+          "requirements": []
+        },
+        {
+          "name": "Social Perspective",
+          "status": "Incomplete",
+          "details": "See Social Perspective section",
+          "is_reference_only": true,
+          "requirements": []
+        },
+        {
+          "name": "STEM Perspective",
+          "status": "Incomplete",
+          "details": "See STEM Perspective section",
+          "is_reference_only": true,
+          "requirements": []
+        },
+        {
+          "name": "Arts & Humanities Perspective",
+          "status": "Incomplete",
+          "details": "See Arts & Humanities Perspective section",
+          "is_reference_only": true,
+          "requirements": []
+        },
+        {
+          "name": "Statistics Perspective",
+          "status": "Incomplete",
+          "details": "See Statistics Perspective section",
+          "is_reference_only": true,
+          "requirements": []
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Communication Skills Perspective",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Writing as Critical Thinking",
+          "status": "Incomplete",
+          "details": "1 Class in ENG 190",
+          "required_credits": 6,
+          "applied_credits": 0,
+          "still_needed_credits": 6,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Speaking",
+          "status": "Incomplete",
+          "details": "1 Class in COMM 170 or 252 or 276",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": null,
+          "courses": [],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Social Perspective",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Social requirement",
+          "status": "Incomplete",
+          "details": "Students must satisfy the Missouri Statute requirement and additional coursework to complete a minimum of 9 credits from AT LEAST '2' PREFIXES.",
+          "required_credits": 9,
+          "applied_credits": 0,
+          "still_needed_credits": 9,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Missouri Statute",
+          "status": "Incomplete",
+          "details": "You must complete a course that fulfills Missouri Statute 170.011.",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": 1,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Additional Social Perspective Courses",
+          "status": "Incomplete",
+          "details": "6 to 9 Credits in @  @ with attribute = SOCP",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": 6,
+          "courses": [],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "STEM Perspective",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "10 Credits in STEM requirement",
+          "status": "Incomplete",
+          "details": "Minimum of 10 credits needed; currently have 9",
+          "required_credits": 10,
+          "applied_credits": 9,
+          "still_needed_credits": 1,
+          "courses": [
+            {
+              "code": "MATH 198",
+              "title": "Analytic Geom & Calc I",
+              "grade": "IP",
+              "credits": 5,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "CS 180",
+              "title": "Fnd of Computer Science I",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Fall 2025",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        },
+        {
+          "name": "Lab Science (4-5 Credits)",
+          "status": "Incomplete",
+          "details": "Except AGSC 104",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": 4,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Mathematics (3-5 Credits)",
+          "status": "Incomplete",
+          "details": "Calculus",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": null,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Additional STEM course (3-5 Credits)",
+          "status": "Incomplete",
+          "details": "CS 180",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": null,
+          "courses": [],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Arts & Humanities Perspective",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Arts & Humanities requirement",
+          "status": "Incomplete",
+          "details": "Minimum of 9 credits from two different prefixes",
+          "required_credits": 9,
+          "applied_credits": 3,
+          "still_needed_credits": 6,
+          "courses": [
+            {
+              "code": "PHRE 186",
+              "title": "Introduction to Philosophy",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Statistics Perspective",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Statistics requirement",
+          "status": "Incomplete",
+          "details": "Minimum of 3 credits; currently 0",
+          "required_credits": 3,
+          "applied_credits": 0,
+          "still_needed_credits": 3,
+          "courses": [
+            {
+              "code": "STAT 190",
+              "title": "Statistics",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Interconnecting Perspectives",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "JINS (Interdisciplinary WE Junior Seminar)",
+          "status": "Incomplete",
+          "details": "1 Class in JINS @",
+          "required_credits": null,
+          "applied_credits": null,
+          "still_needed_credits": 1,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Intercultural Perspective",
+          "status": "Waived",
+          "details": null,
+          "is_reference_only": false,
+          "requirements": []
+        },
+        {
+          "name": "Two Additional Writing Enhanced Courses",
+          "status": "Incomplete",
+          "details": "In addition to the required JINS course, 2 Writing Enhanced courses are needed",
+          "is_reference_only": false,
+          "requirements": []
+        },
+        {
+          "name": "Elementary Foreign Language Requirement",
+          "status": "Waived",
+          "details": null,
+          "is_reference_only": false,
+          "requirements": []
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "First Year Seminar / Experience",
+      "status": "In Progress",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "First Year Seminar",
+          "status": "In Progress",
+          "details": "Course: TRU 120 FYS: Introduction to Language",
+          "required_credits": 3,
+          "applied_credits": 3,
+          "still_needed_credits": 0,
+          "courses": [
+            {
+              "code": "TRU 120",
+              "title": "FYS: Introduction to Language",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Fall 2025",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Missouri Statute Requirement",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Missouri Statute",
+          "status": "Incomplete",
+          "details": "Complete a course that fulfills Missouri Statute 170.011",
+          "is_reference_only": false,
+          "requirements": []
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Required Support & BS Requirements: CS",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "BS Requirements",
+          "status": "Incomplete",
+          "details": "BS Requirement courses may double count with minors or second majors, but may NOT double count with the Dialogues nor be used in the CS major.",
+          "courses": [
+            {
+              "code": "MATH 263",
+              "title": "Analytic Geom & Calc II",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": true,
+          "requirements": [
+            {
+              "name": "One Additional Course",
+              "status": "Still Needed",
+              "details": "3 Credits in DATA 300:599 or MATH 300:599 or STAT 300:599 or DATA 222 or MATH 200 or 264 or STAT 250 or AGSC @ or BIOL @ or CHEM @ or PHYS @",
+              "required_credits": 3,
+              "applied_credits": null,
+              "still_needed_credits": 3,
+              "courses": [],
+              "is_reference_only": false
+            }
+          ]
+        },
+        {
+          "name": "Part I: Required Support",
+          "status": "Incomplete",
+          "details": "Calculus I: MATH 198",
+          "courses": [
+            {
+              "code": "MATH 198",
+              "title": "Analytic Geom & Calc I",
+              "grade": "IP",
+              "credits": 5,
+              "term": "Fall 2025",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        },
+        {
+          "name": "Statistics",
+          "status": "Incomplete",
+          "details": "1 Class in STAT 190 or 290",
+          "courses": [
+            {
+              "code": "STAT 190",
+              "title": "Statistics",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        },
+        {
+          "name": "STEM: Lab Science Course",
+          "status": "Incomplete",
+          "details": "1 Class in @  @ with attribute = LSSP",
+          "courses": [],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Major: Computer Science (BS)",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Credits in major requirement",
+          "status": "Incomplete",
+          "details": "Minimum of 45 credits needed; currently 15 credits taken",
+          "required_credits": 45,
+          "applied_credits": 15,
+          "still_needed_credits": 30,
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Major GPA 2.0 or higher",
+          "status": "Incomplete",
+          "details": "Your GPA is 0.00; a GPA of 2.0 is required",
+          "is_reference_only": false
+        },
+        {
+          "name": "18 Credits in residence",
+          "status": "Incomplete",
+          "details": "A minimum of 18 credits must be taken in residence",
+          "is_reference_only": false
+        },
+        {
+          "name": "Part II: Capstone Experience for Computer Science",
+          "status": "Incomplete",
+          "details": "Complete and present a Capstone Experience",
+          "requirements": [
+            {
+              "name": "Senior Computer Science Seminar",
+              "status": "Still Needed",
+              "details": "1 Class in CS 495",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Computer Science Capstone Experience",
+              "status": "Still Needed",
+              "details": "1 Class in CS 497",
+              "courses": [],
+              "is_reference_only": false
+            }
+          ]
+        },
+        {
+          "name": "Part III: Major Requirements",
+          "status": "Incomplete",
+          "details": null,
+          "requirements": [
+            {
+              "name": "Computer Science Seminar",
+              "status": "Still Needed",
+              "details": "CS 100",
+              "courses": [
+                {
+                  "code": "CS 100",
+                  "title": "Computer Science Seminar",
+                  "grade": "IP",
+                  "credits": 1,
+                  "term": "Fall 2025",
+                  "repeated": true
+                }
+              ],
+              "is_reference_only": false
+            },
+            {
+              "name": "Foundations of Computer Science I",
+              "status": "Still Needed",
+              "details": "CS 180",
+              "courses": [
+                {
+                  "code": "CS 180",
+                  "title": "Fnd of Computer Science I",
+                  "grade": "IP",
+                  "credits": 4,
+                  "term": "Fall 2025",
+                  "repeated": true
+                }
+              ],
+              "is_reference_only": false
+            },
+            {
+              "name": "Foundations of Computer Science II",
+              "status": "Still Needed",
+              "details": "CS 181",
+              "courses": [
+                {
+                  "code": "CS 181",
+                  "title": "Foundations of Comp Science II",
+                  "grade": "IP",
+                  "credits": 3,
+                  "term": "Spring 2026",
+                  "repeated": true
+                }
+              ],
+              "is_reference_only": false
+            },
+            {
+              "name": "Computer Structures",
+              "status": "Still Needed",
+              "details": "CS 191",
+              "courses": [
+                {
+                  "code": "CS 191",
+                  "title": "Computing Structures",
+                  "grade": "IP",
+                  "credits": 3,
+                  "term": "Spring 2026",
+                  "repeated": true
+                }
+              ],
+              "is_reference_only": false
+            },
+            {
+              "name": "Object-Oriented Programming & Design",
+              "status": "Still Needed",
+              "details": "CS 260",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Models of Computation",
+              "status": "Still Needed",
+              "details": "CS 291",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Data Structures and Algorithms",
+              "status": "Still Needed",
+              "details": "CS 310",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Internet Programming",
+              "status": "Still Needed",
+              "details": "CS 315",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Computer Systems Architecture: Design and Simulation",
+              "status": "Still Needed",
+              "details": "CS 333",
+              "courses": [
+                {
+                  "code": "CS 333",
+                  "title": "Computer Systems Architecture",
+                  "grade": "IP",
+                  "credits": 4,
+                  "term": "Spring 2026",
+                  "repeated": true
+                }
+              ],
+              "is_reference_only": false
+            },
+            {
+              "name": "Cyberethics",
+              "status": "Still Needed",
+              "details": "CS 345",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Software Engineering",
+              "status": "Still Needed",
+              "details": "CS 370",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Choose 1 course from Systems Elective",
+              "status": "Still Needed",
+              "details": "CS 390 or 420 or 435 or 455 or 470",
+              "courses": [],
+              "is_reference_only": false
+            },
+            {
+              "name": "Choose at least 6 credits from General CS Electives",
+              "status": "Still Needed",
+              "details": "CS 325 or 380 or 390 or 420 or 430 or 435 or 455 or 460 or 470 or 480 or 484 or 490 or DATA 520",
+              "courses": [],
+              "is_reference_only": false
+            }
+          ]
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Minor: Data Science",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Credits in minor requirement",
+          "status": "Incomplete",
+          "details": "7 credits currently; 22 credits needed",
+          "required_credits": 22,
+          "applied_credits": 7,
+          "still_needed_credits": 15,
+          "courses": [
+            {
+              "code": "CS 180",
+              "title": "Fnd of Computer Science I",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "CS 181",
+              "title": "Foundations of Comp Science II",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        },
+        {
+          "name": "Fundamentals of Data Science",
+          "status": "Still Needed",
+          "details": "1 Class in DATA 222",
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Data Visualization or Intermediate Data Science",
+          "status": "Still Needed",
+          "details": "1 Class in DATA 324 or 322",
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Statistics or Computer Science Option",
+          "status": "Still Needed",
+          "details": "Choose 1 of the following: Statistics Option (6 credits) or Computer Science Option (6 credits)",
+          "courses": [],
+          "is_reference_only": false
+        },
+        {
+          "name": "Statistics Option",
+          "status": "Incomplete",
+          "details": "Complete Matrix or Linear Algebra (MATH 285 or 357) and Data Mining (STAT 520 or DATA 520)",
+          "courses": [
+            {
+              "code": "MATH 285",
+              "title": "Matrix or Linear Algebra",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            },
+            {
+              "code": "STAT 520",
+              "title": "Data Mining and Multivariate Statistics",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        },
+        {
+          "name": "Computer Science Option",
+          "status": "Incomplete",
+          "details": "Complete Object-Oriented Programming & Design (CS 260) and Database Systems (CS 430)",
+          "courses": [
+            {
+              "code": "CS 260",
+              "title": "Object-Oriented Programming & Design",
+              "grade": "IP",
+              "credits": null,
+              "term": null,
+              "repeated": null
+            },
+            {
+              "code": "CS 430",
+              "title": "Database Systems",
+              "grade": "IP",
+              "credits": null,
+              "term": null,
+              "repeated": null
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "40 Credits in Upper Level Course Requirement",
+      "status": "Incomplete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Upper Level Course Requirements",
+          "status": "Incomplete",
+          "details": "40 Credits in upper level coursework required. Currently have 4, need 36 more.",
+          "required_credits": 40,
+          "applied_credits": 4,
+          "still_needed_credits": 36,
+          "courses": [
+            {
+              "code": "CS 333",
+              "title": "Computer Systems Architecture",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "Free Electives",
+      "status": "Complete",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "INDV 116",
+          "status": "Complete",
+          "details": "Strat for Intl Student Success",
+          "credits": 1,
+          "grade": "P",
+          "term": "Fall 2025",
+          "repeated": false
+        }
+      ],
+      "description": null
+    },
+    {
+      "title": "In-progress and Preregistered",
+      "status": "In Progress",
+      "catalog_year": "2025-2026",
+      "gpa": 0.0,
+      "requirements": [
+        {
+          "name": "Courses in progress",
+          "status": "In Progress",
+          "details": null,
+          "courses": [
+            {
+              "code": "CS 100",
+              "title": "Computer Science Seminar",
+              "grade": "IP",
+              "credits": 1,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "CS 180",
+              "title": "Fnd of Computer Science I",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "MATH 198",
+              "title": "Analytic Geom & Calc I",
+              "grade": "IP",
+              "credits": 5,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "TRU 120",
+              "title": "FYS: Introduction to Language",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Fall 2025",
+              "repeated": true
+            },
+            {
+              "code": "CS 181",
+              "title": "Foundations of Comp Science II",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            },
+            {
+              "code": "CS 191",
+              "title": "Computing Structures",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            },
+            {
+              "code": "CS 333",
+              "title": "Computer Systems Architecture",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Spring 2026",
+              "repeated": true
+            },
+            {
+              "code": "MATH 263",
+              "title": "Analytic Geom & Calc II",
+              "grade": "IP",
+              "credits": 4,
+              "term": "Spring 2026",
+              "repeated": true
+            },
+            {
+              "code": "PHRE 186",
+              "title": "Introduction to Philosophy",
+              "grade": "IP",
+              "credits": 3,
+              "term": "Spring 2026",
+              "repeated": true
+            }
+          ],
+          "is_reference_only": false
+        }
+      ],
+      "description": null
+    }
+  ],
+  "legend": "Complete Not complete\nComplete (with classes in-progress) Nearly complete - see advisor\nPrerequisite @ Any course number\n(R) Repeated class"
+}

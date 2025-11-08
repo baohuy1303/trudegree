@@ -1,2 +1,4 @@
 gpt-5-nano: 3m21s -> Missing data science req
-gpt-4.1-nano: 32s
+gpt-4.1-nano: 32s -> good
+gpt-4.1: 1m -> nested no structure
+gpt-4.1-nano NEW PROMPT: 50s
