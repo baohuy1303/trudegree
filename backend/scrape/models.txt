@@ -13,4 +13,6 @@ Letter Portrait:
     gpt-5-nano Base: 3m10s -> Missing a lot
     gpt-5-nano lowReason: 1m3s -> Missing a lot
 
-    gpt-5-mini lowReason: 88s -> Good caputures all info || T2:
+    gpt-5-mini lowReason: 88s -> Good caputures all info || T2: 2m -> More info but still the same
+
+    gpt-4o: 38s -> Very good and fast
