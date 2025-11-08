@@ -1,4 +1,11 @@
 gpt-5-nano: 3m21s -> Missing data science req
 gpt-4.1-nano: 32s -> good
 gpt-4.1: 1m -> nested no structure
-gpt-4.1-nano NEW PROMPT: 50s
+gpt-4.1-nano NEW PROMPT: 50s -> good sometimes bad sometimes (inconsistent)
+
+New benchmark:
+Letter Portrait:
+    gpt-4.1-mini: T1: 2m -> Very good no missing info || T2: 1m39s -> Req are now marked IP, just some minor naming changes but still the same thing as T1
+    gpt-4.1-nano: T1: 37s -> Missing critical info
+    gpt-4.1: T1: 1m17s -> Very good, extra fields like credits etc... filled out
+    

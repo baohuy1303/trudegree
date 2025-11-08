@@ -11,8 +11,9 @@ from typing import List, Optional
 import json
 from pydantic import RootModel
 from enum import Enum
+from timeit import default_timer as timer
 
-llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4.1-nano", temperature=0.0)
+llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4.1-mini", temperature=0.0)
 
 class Status(str, Enum):
     COMPLETE = "Complete"
@@ -48,17 +49,17 @@ class Course(BaseModel):
 
 class Requirement(BaseModel):
     name: str = Field(..., description="Specific requirement name (e.g. 'Statistics Course', 'Senior Seminar')")
-    status: Status = Field(..., description="Status of the requirement, e.g. 'Complete', 'In Progress', 'Still Needed'")
+    status: Status = Field(..., description="Status of the requirement")
     details: Optional[str] = Field(None, description="Text explaining what's still needed or fulfilled")
     required_credits: Optional[float] = Field(None, description="Total credits required for this requirement")
     applied_credits: Optional[float] = Field(None, description="Credits currently applied")
-    still_needed_credits: Optional[float] = Field(None, description="Credits still required to fulfill this requirement")
+    still_needed_credits: Optional[float] = Field(None, description="Required credits minus applied credits")
     courses: Optional[List[Course]] = Field(default_factory=list, description="List of courses applied toward this requirement")
     is_reference_only: Optional[bool] = Field(False, description="True if this requirement is a reference to another block")
 
 class Block(BaseModel):
     title: str = Field(..., description="Major block title, e.g. 'Major: Computer Science (BS)' or 'Disciplinary Perspectives'")
-    status: Status = Field(..., description="Block completion status: 'Complete', 'In Progress', or 'Incomplete'")
+    status: Status = Field(..., description="Block completion status")
     catalog_year: Optional[str] = Field(None, description="Catalog year this block follows")
     gpa: Optional[float] = Field(None, description="GPA for this block or section if available")
     requirements: List[Requirement] = Field(default_factory=list, description="All requirements in this block. For Disciplinary Perspectives, the requirements will not have courses, the later blocks will handle these courses.")
@@ -88,10 +89,12 @@ class StudentProfile(BaseModel):
     free_electives: Optional[List[Course]] = Field(default_factory=list, description="Free elective courses")
     legend: Optional[str] = Field(None, description="Legend section text, if parsed")
 
+
+start = timer()
 parser = JsonOutputParser(pydantic_object=StudentProfile)
 
 def load_pdf():
-    loader = PyPDFLoader("degreeworks-data/3369df12-aee4-452b-8f53-8e536f2539f7.pdf")
+    loader = PyPDFLoader("degreeworks-data/letter-p.pdf")
     pages = loader.load()
 
     return pages
@@ -110,6 +113,7 @@ prompt = PromptTemplate(
         "- If a requirement name matches a known block title, set 'is_reference_only' to true and add a 'details' note saying 'See [BlockTitle] block below.'\n"
         "- For missing values, return null.\n"
         "- Pay special attention to the `Required Support & Requirements` and `STEM Perspective` blocks, parse all the requirements thoroughly.\n"
+        "- Take "
         "{format_instructions}\n\n"
         "RAW TEXT TO PARSE:\n{context}"
     ),
@@ -125,8 +129,11 @@ result = chain.invoke({"context": all_content})
 student_profile : StudentProfile = result
 
 valid_json_str = json.dumps(student_profile, ensure_ascii=False, indent=2)
+end = timer()
+time_taken = end - start
 output_dir = "parsedDegree"
 os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "student_profile_fixed_5.json")
+output_path = os.path.join(output_dir, "gpt4.1_mini-letterP-FinalTest.json")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(valid_json_str)
+print(f"Time taken: {time_taken}")
