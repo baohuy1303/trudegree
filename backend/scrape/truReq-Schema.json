@@ -1,0 +1,19 @@
+{
+    "Perspective" : "Name of Perspective",
+    "Subsection" : [
+        {
+            "Section" : "Name of Section",
+            "Subsection (if has one)" : [
+                {
+                    "Section" : "Name of Section",
+                    "Courses" : [
+                        "Prefix + number + Course name, Credits"
+                    ]
+                }
+            ],
+            "Courses" : [
+                "Prefix + number + Course name, Credits"
+            ]
+        }
+    ]
+}

@@ -15,6 +15,7 @@ def scrape_web(website):
     chrome_driver_path = "./chromedriver.exe"
     options = Options()
     options.add_argument("--disable-gpu")
+    options.add_argument("--headless")
     options.add_argument("--no-sandbox")
 
     driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
@@ -60,8 +61,6 @@ def clean_body_content(body_content):
     cleaned_body_content = "\n".join(
         line.strip() for line in cleaned_body_content.splitlines() if line.strip()
     )
-    with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(cleaned_body_content, f, indent=2, ensure_ascii=False)
     return cleaned_body_content
 
 def parsePlan(text):
@@ -115,10 +114,8 @@ def parsePlan(text):
     with open("samplePlan.json", "w", encoding="utf-8") as f:
         json.dump(parsed_plan, f, indent=2, ensure_ascii=False)
 
-    # 6. Output
-    print(json.dumps(parsed_plan, indent=2))
 
-    return json.dumps(parsed_plan, indent=2)
+    return parsed_plan
 
 
 def split_dom_content(dom_content, max_length=6000):

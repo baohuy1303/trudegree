@@ -1,0 +1,8 @@
+Old prompt:
+    gpt4o: Fast but inaccurate
+    gpt5-mini: 2m30s -> Very accurate
+    gpt5-nano: Can't output
+    gpt5-mini-lowReason:  1m04s -> inaccurate
+    
+
+Newest Prompt:

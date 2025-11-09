@@ -12,12 +12,9 @@ import json
 import re
 from timeit import default_timer as timer
 
-# Optimized LLM - GPT-4o is faster than gpt-5-mini
 llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4o", temperature=0.0)
 
-#llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-5-mini", reasoning_effort="low")
-
-def clean_pdf_text(text):
+def clean_pdf_text(text : str) -> str:
     """Clean PDF text to reduce tokens"""
     # Remove excessive whitespace
     text = re.sub(r'\n+', '\n', text)
@@ -36,11 +33,6 @@ def clean_pdf_text(text):
     
     return text.strip()
 
-def load_and_clean_pdf():
-    loader = PyPDFLoader("degreeworks-data/letter-p.pdf")
-    pages = loader.load()
-    all_content = "\n".join([page.page_content for page in pages])
-    return clean_pdf_text(all_content)
 
 # Your existing Pydantic models remain the same...
 class Status(str, Enum):
@@ -117,44 +109,54 @@ class StudentProfile(BaseModel):
     free_electives: Optional[List[Course]] = Field(default_factory=list, description="Free elective courses")
     legend: Optional[str] = Field(None, description="Legend section text, if parsed")
 
-start = timer()
-parser = JsonOutputParser(pydantic_object=StudentProfile)
+def parse_degreeworks_pdf(pdf_path: str) -> dict:
+    """Parse any DegreeWorks PDF and return structured JSON."""
 
-prompt = PromptTemplate(
-    template=(
-        "You are an expert academic record parser that extracts structured data from DegreeWorks audit PDFs.\n"
-        "Your goal is to convert the provided text into valid JSON following the DegreeWorksProfile model.\n\n"
-        "Instructions:\n"
-        "- Identify the student's basic information (name, ID, degree, program, catalog year, classification, GPA, etc.).\n"
-        "- Group all sections (like 'Major', 'Minor', 'Disciplinary Perspectives', etc.) as Blocks.\n"
-        "- Within each Block, extract all listed Requirements, their status, and associated courses.\n"
-        "- For each course, include code, title, grade, credits, term, and if it’s repeated or in-progress.\n"
-        "- Preserve the hierarchy: Student → DegreeInfo → Blocks → Requirements → Courses.\n"
-        "- If a requirement name exactly matches a block title, do NOT treat it as a requirement. Instead, store it as a reference note (e.g. 'See [BlockTitle] block below') and continue parsing the other blocks normally.\n"
-        "- If a requirement name matches a known block title, set 'is_reference_only' to true and add a 'details' note saying 'See [BlockTitle] block below.'\n"
-        "- For missing values, return null.\n"
-        "- Pay special attention to the `Required Support & Requirements` and `STEM Perspective` blocks, parse all the requirements thoroughly.\n"
-        "- Take "
-        "{format_instructions}\n\n"
-        "RAW TEXT TO PARSE:\n{context}"
-    ),
-    input_variables=["context"],
-    partial_variables={"format_instructions": parser.get_format_instructions()},
-)
+    start = timer()
+    loader = PyPDFLoader(pdf_path)
+    pages = loader.load()
+    all_content = "\n".join([page.page_content for page in pages])
+    cleaned_content = clean_pdf_text(all_content) 
 
-cleaned_content = load_and_clean_pdf()  # Use cleaned content
+    parser = JsonOutputParser(pydantic_object=StudentProfile)
 
-chain = prompt | llm | parser
-result = chain.invoke({"context": cleaned_content})
+    prompt = PromptTemplate(
+        template=(
+            "You are an expert academic record parser that extracts structured data from DegreeWorks audit PDFs.\n"
+            "Your goal is to convert the provided text into valid JSON following the DegreeWorksProfile model.\n\n"
+            "Instructions:\n"
+            "- Identify the student's basic information (name, ID, degree, program, catalog year, classification, GPA, etc.).\n"
+            "- Group all sections (like 'Major', 'Minor', 'Disciplinary Perspectives', etc.) as Blocks.\n"
+            "- Within each Block, extract all listed Requirements, their status, and associated courses.\n"
+            "- For each course, include code, title, grade, credits, term, and if it’s repeated or in-progress.\n"
+            "- Preserve the hierarchy: Student → DegreeInfo → Blocks → Requirements → Courses.\n"
+            "- If a requirement name exactly matches a block title, do NOT treat it as a requirement. Instead, store it as a reference note (e.g. 'See [BlockTitle] block below') and continue parsing the other blocks normally.\n"
+            "- If a requirement name matches a known block title, set 'is_reference_only' to true and add a 'details' note saying 'See [BlockTitle] block below.'\n"
+            "- For missing values, return null.\n"
+            "- Pay special attention to the `Required Support & Requirements` and `STEM Perspective` blocks, parse all the requirements thoroughly.\n"
+            "{format_instructions}\n\n"
+            "RAW TEXT TO PARSE:\n{context}"
+        ),
+        input_variables=["context"],
+        partial_variables={"format_instructions": parser.get_format_instructions()},
+    )
 
-end = timer()
-time_taken = end - start
+    chain = prompt | llm | parser
+    result = chain.invoke({"context": cleaned_content})
 
-print(f"Time taken: {time_taken:.2f} seconds")
+    end = timer()
+    time_taken = end - start
 
-valid_json_str = json.dumps(result, ensure_ascii=False, indent=2)
-output_dir = "parsedDegree"
-os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "gpt4o_optimized-T2.json")
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(valid_json_str)
+    print(f"Time taken: {time_taken:.2f} seconds")
+
+    if isinstance(result, str):
+        result = json.loads(result)
+
+    return result
+
+
+"""     output_dir = "parsedDegree"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "gpt4o_optimized-T2.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(valid_json_str) """

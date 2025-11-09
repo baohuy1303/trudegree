@@ -2,12 +2,11 @@ import selenium.webdriver as webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-import time
 import json
-import re
+import time
+import os
 
-
-JSON_FILE = "truman_degree.json"
+JSON_FILE = "truman_REQ.json"
 
 def scrape_web(website):
     print("Scraping website:", website)
@@ -21,61 +20,81 @@ def scrape_web(website):
 
     try:
         driver.get(website)
-        print("Website opened successfully")
+        print("✅ Website opened successfully")
+        print("➡️ Log in manually, navigate to your target page.")
+        input("Press ENTER once you're ready to start scraping manually...")
 
-        # Wait a bit to allow JS to load events (Truman’s page uses JavaScript)
-        time.sleep(10)
+        all_pages = []
+        page_num = 1
 
-        html = driver.page_source
-        return html
+        while True:
+            command = input("\nPress ENTER to scrape this page, or type 'q' to quit: ").strip().lower()
+            if command == "q":
+                print("🛑 Ending session.")
+                break
+
+            print(f"📸 Scraping page {page_num}...")
+            html = driver.page_source
+            extracted = extract_target_div(html)
+            if extracted:
+                all_pages.append({
+                    "page_number": page_num,
+                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "content": extracted
+                })
+                save_json(all_pages)
+                print(f"✅ Page {page_num} saved to {JSON_FILE}")
+            else:
+                print("⚠️ Target div not found on this page.")
+
+            page_num += 1
+            print("➡️ Click next arrow in the browser, wait for it to load, then press ENTER again.")
+
+        return all_pages
 
     except Exception as e:
-        print("Error opening website:", e)
-        return None
+        print("❌ Error during scraping:", e)
+        return []
 
     finally:
         driver.quit()
+        print("🔒 Browser closed.")
 
 
-def extract_body_content(html):
+def extract_target_div(html):
+    """Extract only the target div's text content."""
     soup = BeautifulSoup(html, 'html.parser')
-    body = soup.body
-    if body is None:
+    parent_div = soup.find("div", id="plan-card")
+    first_child_div = parent_div.find("div", recursive=False)
+    if not first_child_div:
         return None
-    return str(body)
 
-def get_block(section_name):
-    pattern = rf"{section_name}\n(.*?)\n[A-Z][^\n]+(?:\n|$)"
-    match = re.search(pattern, text, re.DOTALL)
-    return match.group(1).strip() if match else None
+    # Second child of first_child_div
+    children_of_first = first_child_div.find_all(recursive=False)
+    second_child_of_first = children_of_first[1] if len(children_of_first) > 1 else None
+    if not second_child_of_first:
+        return None
 
-def clean_body_content(body_content):
-    soup = BeautifulSoup(body_content, 'html.parser')
+    # Second child of second_child_of_first
+    children_of_second = second_child_of_first.find_all(recursive=False)
+    second_child_of_second = children_of_second[1] if len(children_of_second) > 1 else None
+    if not second_child_of_second:
+        return None
 
-    # Remove scripts, styles, and other irrelevant tags
-    for tag in soup(['script', 'style', 'noscript']):
-        tag.extract()
+    # Clean up: remove unwanted nested tags
+    for tag in second_child_of_second(['script', 'style', 'noscript']):
+        tag.decompose()
 
-    cleaned_body_content = soup.get_text(separator="\n")
-    cleaned_body_content = "\n".join(
-        line.strip() for line in cleaned_body_content.splitlines() if line.strip()
-    )
+    text = second_child_of_second.get_text(separator="\n")
+    cleaned = "\n".join(line.strip() for line in text.splitlines() if line.strip())
+    return cleaned
+
+
+def save_json(data):
     with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(cleaned_body_content, f, indent=2, ensure_ascii=False)
-    return cleaned_body_content
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def split_dom_content(dom_content, max_length=6000):
-    return [dom_content[i:i + max_length] for i in range(0, len(dom_content), max_length)]
-
-def scrape_sample_plan(url):
-    html = scrape_web(url)
-    body_content = extract_body_content(html)
-    cleaned_body_content = clean_body_content(body_content)
-    return cleaned_body_content
-    
 if __name__ == "__main__":
-    url = "https://www.truman.edu/fouryearplan/computer-science-bs/"
-    html = scrape_web(url)
-    body_content = extract_body_content(html)
-    cleaned_body_content = clean_body_content(body_content)
+    url = "https://mercury15.truman.edu:8474/"
+    scrape_web(url)
