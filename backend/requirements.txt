@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+langchain
+langchain-community
+langchain-openai
+langgraph
+pydantic
+python-dotenv
+

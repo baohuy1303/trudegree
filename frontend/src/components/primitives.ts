@@ -15,7 +15,7 @@ export const title = tv({
     size: {
       sm: "text-3xl lg:text-4xl",
       md: "text-[2.3rem] lg:text-5xl",
-      lg: "text-4xl lg:text-6xl",
+      lg: "text-4xl lg:text-7xl",
     },
     fullWidth: {
       true: "w-full block",
@@ -35,7 +35,7 @@ export const title = tv({
         "pink",
         "foreground",
       ],
-      class: "bg-clip-text text-transparent bg-gradient-to-b",
+      class: "bg-clip-text text-transparent bg-gradient-to-b font-bold",
     },
   ],
 });

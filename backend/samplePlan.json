@@ -1,0 +1,219 @@
+{
+  "program": "Physics (BS), General Physics Track, Start with Calculus I",
+  "semesters": [
+    {
+      "semester": "Semester 1",
+      "courses": [
+        {
+          "code": "TRU 120",
+          "name": "First Year Seminar",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 185",
+          "name": "College Physics I",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "code": "MATH 198",
+          "name": "Analytic Geometry and Calculus I",
+          "credits": 5,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 2",
+      "courses": [
+        {
+          "code": "PHYS 186",
+          "name": "College Physics II",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "code": "PHYS 190",
+          "name": "Calculus for Physics I",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "code": "MATH 263",
+          "name": "Analytic Geometry and Calculus II",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 3",
+      "courses": [
+        {
+          "code": "PHYS 191",
+          "name": "Calculus for Physics II",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "code": "MATH 264",
+          "name": "Analytic Geometry and Calculus III",
+          "credits": 4,
+          "note": ""
+        },
+        {
+          "code": "STAT 290",
+          "name": "Statistics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "CS 170",
+          "name": "Introduction to Computer Science I",
+          "credits": 4,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "semester": "Semester 4",
+      "courses": [
+        {
+          "code": "PHYS 250",
+          "name": "Modern Physics I",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 275",
+          "name": "Vibrations and Waves",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 310",
+          "name": "Intermediate Laboratory",
+          "credits": 2,
+          "note": ""
+        },
+        {
+          "code": "MATH 365",
+          "name": "Ordinary Differential Equations",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 5",
+      "courses": [
+        {
+          "code": "PHYS 320",
+          "name": "Electronics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 351",
+          "name": "Modern Physics II",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 382",
+          "name": "Mathematical Methods in Physics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- JINS 3XX: WE/____________ (3 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 6",
+      "courses": [
+        {
+          "code": "PHYS 345",
+          "name": "Junior Seminar",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "code": "PHYS 386",
+          "name": "Classical Mechanics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 446",
+          "name": "WE/Advanced Laboratory",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6-9 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 7",
+      "courses": [
+        {
+          "code": "PHYS 486",
+          "name": "Thermodynamics and Statistical Mechanics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "PHYS 580",
+          "name": "Quantum Mechanics",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6-9 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 8",
+      "courses": [
+        {
+          "code": "PHYS 482",
+          "name": "Electricity and Magnetism",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- PHYS 518: Advanced Topics (1-5 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6-12 cr)"
+        }
+      ]
+    }
+  ],
+  "electives": {
+    "area_a": [],
+    "area_b": [],
+    "area_c": []
+  },
+  "notes": [
+    "Portfolio required",
+    "Civics Exam recommended in first year"
+  ]
+}

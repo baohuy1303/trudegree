@@ -5,14 +5,16 @@ from bs4 import BeautifulSoup
 import time
 import json
 import re
-
+import os
 
 JSON_FILE = "truman_degree.json"
 
 def scrape_web(website):
     print("Scraping website:", website)
 
-    chrome_driver_path = "./chromedriver.exe"
+    # Get absolute path to chromedriver.exe (in the same directory as this file)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    chrome_driver_path = os.path.join(current_dir, "chromedriver.exe")
     options = Options()
     options.add_argument("--disable-gpu")
     options.add_argument("--headless")

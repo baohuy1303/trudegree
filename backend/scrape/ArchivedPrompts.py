@@ -2021,7 +2021,7 @@ The "text" field should be CONCISE and ACTIONABLE:
 
 - Use clear, scannable formatting with bullet points and section headers
 - Start with "## Your Course Plan"
-- Show CURRENT SEMESTER with "(In Progress)"标记
+- Show CURRENT SEMESTER with "(In Progress)"
 - Show each FUTURE SEMESTER with specific course codes and brief descriptions
 - End with "Rationale:" and 2-3 sentence explanation
 - NO internal reasoning steps or process descriptions
