@@ -1,0 +1,40 @@
+Chat History - 2025-11-09 22:39:27
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    {"course_code": "ENG 190", "reason": "Writing as Critical Thinking — satisfies Communication Skills Writing requirement (6 credits needed)"},
+    {"course_code": "STAT 190", "reason": "Statistics — satisfies Statistics Perspective and Data Science minor requirement"},
+    {"course_code": "CS 260", "reason": "Object-Oriented Programming & Design — CS major requirement; prereq CS 181 (in progress)"},
+    {"course_code": "PHRE 188", "reason": "Ethics — Arts & Humanities credit and complements Cyberethics coursework"},
+    {"course_code": "CS 325", "reason": "Software Tools/Systems Elective — counts toward General CS Electives and builds systems skills"},
+    {"course_code": "CS 310", "reason": "Data Structures and Algorithms — CS major requirement; prereq CS 191 (in progress) and CS 260"},
+    {"course_code": "CS 315", "reason": "Internet Programming — CS major requirement; builds web/programming skills"},
+    {"course_code": "DATA 222", "reason": "Fundamentals of Data Science — required for Data Science minor"},
+    {"course_code": "MATH 264", "reason": "Analytic Geom & Calc III — meets BS support/upper-division math requirement"},
+    {"course_code": "CS 370", "reason": "Software Engineering — CS major requirement for design and team development skills"},
+    {"course_code": "CS 345", "reason": "Cyberethics — required CS major course"},
+    {"course_code": "CS 430", "reason": "Database Systems — required for Data Science minor (CS option) and CS electives"},
+    {"course_code": "PHYS 195", "reason": "Physics I with Lab — satisfies STEM Perspective lab-science requirement (4-5 credits)"},
+    {"course_code": "JINS 300", "reason": "JINS (WE Junior Seminar) — fulfills Interconnecting Perspectives JINS requirement"},
+    {"course_code": "CS 380", "reason": "General CS Elective — contributes toward required CS electives and upper-level credit"},
+    {"course_code": "CS 420", "reason": "Systems Elective (e.g., CS 420) — fulfills Systems Elective option for major"},
+    {"course_code": "CS 480", "reason": "General CS Elective — upper-level elective to meet 40 upper-level credit requirement"},
+    {"course_code": "CS 497", "reason": "Computer Science Capstone Experience — required capstone for CS BS"},
+    {"course_code": "CS 495", "reason": "Senior Computer Science Seminar — required senior seminar (1 credit)"},
+    {"course_code": "DATA 324", "reason": "Data Visualization — required for Data Science minor (Data Visualization option)"},
+    {"course_code": "MATH 285", "reason": "Matrix or Linear Algebra — required for Data Science minor (Statistics Option prerequisite)"},
+    {"course_code": "CS 390", "reason": "Systems Elective / General CS Elective — counts toward systems/general CS elective requirement"},
+    {"course_code": "HIST 104", "reason": "US History I — satisfies Missouri Statute requirement in Social Perspective"},
+    {"course_code": "ART 203", "reason": "Introduction to the Visual Arts — satisfies Arts & Humanities Perspective from a second prefix"},
+    {"course_code": "CS 455", "reason": "General CS Elective (upper-level) — contributes to upper-level and major elective requirements"},
+    {"course_code": "CS 460", "reason": "General CS Elective (upper-level) — contributes to upper-level and major elective requirements"},
+    {"course_code": "CS 484", "reason": "General CS Elective (upper-level) — contributes to upper-level and major elective requirements"},
+    {"course_code": "CS 470", "reason": "Systems Elective (if offered) — contributes to Systems Elective/upper-level credit"},
+    {"course_code": "CS 490", "reason": "General CS Elective / Independent Study — upper-level credit toward major and 40-credit upper-level requirement"},
+    {"course_code": "SOAN 190", "reason": "Introduction to Sociology — Social Perspective credit from different prefix"},
+    {"course_code": "FREE 301", "reason": "Free elective to reach credit minimums and balance semester load (upper-level/general elective)"}
+  ],
+  "text": "## Your Course Plan\n\n**Current Semester (Fixed):**\n- CS 100 (In Progress)\n- CS 180 (In Progress)\n- MATH 198 (In Progress)\n- TRU 120 (In Progress)\n\n**Spring 2026 (Scheduled / In Progress):**\n- CS 181 (In Progress)\n- CS 191 (In Progress)\n- MATH 263 (In Progress)\n- CS 333 (In Progress)\n- PHRE 186 (In Progress)\n\n**Fall 2026:**\n- CS 260\n- STAT 190\n- ENG 190\n- PHRE 188\n- CS 325\n\n**Spring 2027:**\n- CS 310\n- CS 315\n- DATA 222\n- MATH 264\n- CS 370\n\n**Fall 2027:**\n- CS 345\n- CS 430\n- PHYS 195\n- JINS 300\n- CS 380\n\n**Spring 2028:**\n- CS 420\n- CS 480\n- CS 497\n- CS 495\n- DATA 324\n- MATH 285\n- CS 390\n\n**Fall 2028:**\n- CS 455\n- CS 460\n- CS 484\n- HIST 104\n- ART 203\n\n**Spring 2029:**\n- CS 470\n- CS 490\n- SOAN 190\n- FREE 301\n- (additional free elective as needed to meet 120-credit total)\n\nRationale: This plan respects your current registrations and sequences core CS courses so prerequisites (CS 181, CS 191) are in place before dependent courses. It front-loads general education requirements (writing, statistics, Missouri statute, arts/humanities, social) and the Data Science minor courses early so you have room for capstone and upper-level CS electives in later semesters. The plan balances each semester to meet the 15–17 credit guideline and ensures completion of major, minor, STEM, and general education requirements by the end of the plan."
+}
+

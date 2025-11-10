@@ -1,0 +1,96 @@
+Chat History - 2025-11-09 22:50:48
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    {
+      "course_code": "CS 260",
+      "reason": "Object-Oriented Programming & Design; prerequisite CS 180 completed, enables major sequence"
+    },
+    {
+      "course_code": "CS 310",
+      "reason": "Data Structures and Algorithms; essential for CS core progression"
+    },
+    {
+      "course_code": "CS 315",
+      "reason": "Internet Programming; major elective that aligns with CS sequencing"
+    },
+    {
+      "course_code": "MATH 264",
+      "reason": "Calculus II; continues Mathematics progression after MATH 263"
+    },
+    {
+      "course_code": "POL 262",
+      "reason": "State & Local Government; satisfies Social Perspective MO Statute/Gen-Ed pathways"
+    },
+    {
+      "course_code": "HIST 104",
+      "reason": "US History I; MO Statute-related requirement within Disciplinary Perspectives"
+    },
+    {
+      "course_code": "DATA 222",
+      "reason": "Fundamentals of Data Science; core part of Data Science minor"
+    },
+    {
+      "course_code": "DATA 324",
+      "reason": "Data Visualization; required for Data Science minor and data-focused coursework"
+    },
+    {
+      "course_code": "STAT 290",
+      "reason": "Statistics; complements STAT 190/290 requirement and supports Data Science minor"
+    },
+    {
+      "course_code": "JINS 300 WE/Cultural Crossroads",
+      "reason": "Interdisciplinary WE Junior Seminar; satisfies Interdisciplinary Perspectives requirement"
+    },
+    {
+      "course_code": "CS 345",
+      "reason": "Cyberethics; major requirement and aligns with CS ethics/module topics"
+    },
+    {
+      "course_code": "CS 370",
+      "reason": "Software Engineering; major requirement for full CS sequence"
+    },
+    {
+      "course_code": "DATA 520",
+      "reason": "Data Mining; supports Data Science minor and upper-level data work"
+    },
+    {
+      "course_code": "MATH 285",
+      "reason": "Linear Algebra; satisfies Mathematics option for Statistics/Data Science tracks"
+    },
+    {
+      "course_code": "CS 430",
+      "reason": "Database Systems; major elective and data-oriented foundation"
+    },
+    {
+      "course_code": "CS 435",
+      "reason": "Systems Elective; fulfilling major elective pathway"
+    },
+    {
+      "course_code": "CS 455",
+      "reason": "Software Engineering II; continuation of software engineering track"
+    },
+    {
+      "course_code": "CS 470",
+      "reason": "CS elective; broadening advanced CS topics"
+    },
+    {
+      "course_code": "MATH 357",
+      "reason": "Matrix Algebra; supports upper-level math/CS requirements"
+    },
+    {
+      "course_code": "STAT 520",
+      "reason": "Data Mining/Advanced Statistics track for Data Science options; 6-credit option path"
+    },
+    {
+      "course_code": "CS 495",
+      "reason": "Senior CS Seminar; capstone-like senior experience"
+    },
+    {
+      "course_code": "CS 497",
+      "reason": "CS Capstone Experience; one-credit capstone sequence component"
+    }
+  ],
+  "text": "## Your Course Plan\n\n**Current Semester (Fall 2025) (Fixed):**\n- CS 100 (In Progress)\n- CS 180 (In Progress)\n- MATH 198 (In Progress)\n- TRU 120 (In Progress)\n- INDV 116 (Completed)\n\n**Next Semester (Spring 2026):**\n- CS 181 (In Progress)\n- CS 191 (In Progress)\n- CS 333 (In Progress)\n- MATH 263 (In Progress)\n- PHRE 186 (In Progress)\n\n**Semester 3 (Fall 2026):**\n- CS 260: Object-Oriented Programming & Design\n- CS 310: Data Structures and Algorithms\n- CS 315: Internet Programming\n- MATH 264: Calculus II\n- POL 262: State & Local Government\n\n**Semester 4 (Spring 2027):**\n- CS 345: Cyberethics\n- CS 370: Software Engineering\n- DATA 222: Fundamentals of Data Science\n- DATA 324: Data Visualization\n- STAT 290: Statistics\n\n**Semester 5 (Fall 2027):**\n- POL 262: State & Local Government (if not completed in Fall 2026; otherwise substitute with HIST 104)\n- CS 430: Database Systems\n- CS 390: Systems Elective\n- DATA 520: Data Mining\n- MATH 285: Linear Algebra\n\n**Semester 6 (Spring 2028):**\n- CS 435: Systems Elective\n- CS 455: Software Engineering II\n- CS 470: Topics in CS\n- MATH 357: Matrix Algebra\n- STAT 520: Data Mining / Advanced Statistics (if not yet completed)\n\n**Semester 7 (Fall 2028):**\n- CS 495: Senior CS Seminar\n- CS 497: CS Capstone Experience\n- CS 390/420: Additional Systems Elective (choose one or two depending on credit goals)\n- DATA 520: Data Mining (or another Data Science elective if needed)\n- MATH 285 or MATH 357 (if not yet completed) or an approved upper-division elective to reach 15-17 credits\n\n**Semester 8 (Spring 2029):**\n- CS 497: Capstone Continuation (if needed)\n- CS 435/455/470 (additional upper-level CS electives as needed)\n- HIST or POL elective for remaining gen-ed requirements\n- any remaining Data Science minor requirements (DATA 222/324/520 already scheduled) to meet 22 credits in the minor\n- additional upper-level CS or Math elective to total ~120 credits\n\nRationale: This 4-year plan front-loads General Education and the Data Science minor while maintaining a coherent CS BS major progression. It aligns prerequisites to ensure smooth sequencing (e.g., CS 180 precedes CS 260, etc.), spaces out upper-level CS coursework across later semesters, and keeps a consistent 15–17 credits per term. Current registrations are respected, placeholders are replaced with specific Truman courses drawn from the official plans and the DegreeWorks audit, and the plan aims to satisfy the 120-credit requirement inklusive the 45-credits in residence and other Truman Gen-Ed and major/minor requirements."}
+

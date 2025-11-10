@@ -5,4 +5,17 @@ Old prompt:
     gpt5-mini-lowReason:  1m04s -> inaccurate
     
 
-Newest Prompt:
+MASTER PROMPT (4 year plan):
+    gpt4o: In: 45.178k | Out: 967 | Time: 67s -> Inacurate, placeholder courses and misisng array courses (1)
+    gpt_5-base: In:  | Out:  | Time: 332s -> VERY GOOD, everything included but too slow (3)
+    gpt_5-mini base: In: 157.878k | Out: 19.507k | Time: 172s -> Broken (4)
+    gpt_5-mini minimalReason: In:  | Out:  | Time: 66s -> Good but has duplicate courses (5)
+    gpt_5-nano minimalReason: In:  | Out:  | Time: 17s -> Unusable (6)
+    gpt_5-nano base: In:  | Out:  | Time: 177s -> Still bad (7)
+
+MASTER PROMPT (Plan next year):
+    gpt4o: In: 63.950k | Out: 1.591k | Time: 35s -> Inacurate, placeholder courses and misisng array courses (2)
+
+NEW_MASTER:
+    gpt-5-mini LowReason: 80-90s -> Perfect results 
+

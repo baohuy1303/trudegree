@@ -1,0 +1,40 @@
+Chat History - 2025-11-09 22:45:49
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    {"course_code": "CS 250", "reason": "Systems Programming — major required; follows CS 181/CS 191."},
+    {"course_code": "CS 260", "reason": "Object-Oriented Programming & Design — major required; follows CS 181."},
+    {"course_code": "DATA 222", "reason": "Fundamentals of Data Science — Data Science minor core course."},
+    {"course_code": "STAT 290", "reason": "Statistics — satisfies Statistics Perspective and Data Science minor statistic requirement."},
+    {"course_code": "ENG 190", "reason": "Writing as Critical Thinking — fulfills Communication Skills (writing) requirement."},
+    {"course_code": "CS 310", "reason": "Data Structures & Algorithms — major required; requires CS 260."},
+    {"course_code": "CS 291", "reason": "Models of Computation — major required course in the core sequence."},
+    {"course_code": "MATH 285", "reason": "Matrix/Linear Algebra — required for Data Science minor (Statistics option)."},
+    {"course_code": "POL 161", "reason": "American National Government — fulfills Missouri Statute and Social Perspective credit."},
+    {"course_code": "CS 430", "reason": "Database Systems — general CS elective useful for major and Data Science background."},
+    {"course_code": "CS 315", "reason": "Internet Programming — CS elective (Area A) and major requirement in sample sequences."},
+    {"course_code": "CS 390", "reason": "Operating Systems — chosen Systems Elective (Area B) for major requirements."},
+    {"course_code": "DATA 322", "reason": "Intermediate Data Science — satisfies Data Science minor option (visualization/analysis track)."},
+    {"course_code": "COMM 170", "reason": "Public Speaking — fulfills Communication Skills (speaking) requirement."},
+    {"course_code": "PHYS 195", "reason": "Physics I with Lab — satisfies STEM lab-science perspective requirement (4-5 cr lab)."},
+    {"course_code": "CS 345", "reason": "Cyberethics — major required WE course (ethical component of CS curriculum)."},
+    {"course_code": "CS 370", "reason": "Software Engineering — major required WE course; builds on CS 310."},
+    {"course_code": "CS 480", "reason": "Artificial Intelligence — general CS elective (WE) and upper-level major elective."},
+    {"course_code": "DATA 520", "reason": "Data Mining & Multivariate Statistics — satisfies Data Science minor STAT option requirement."},
+    {"course_code": "JINS 303", "reason": "WE Junior Seminar: Computers & Natural Lang — fulfills JINS WE junior seminar requirement."},
+    {"course_code": "CS 495", "reason": "Senior Computer Science Seminar — required part of major (senior seminar)."},
+    {"course_code": "MATH 264", "reason": "Analytic Geometry & Calculus III — satisfies BS additional support/BS requirement option."},
+    {"course_code": "SOAN 190", "reason": "Introduction to Sociology — Social Perspective elective to complete 9 social credits."},
+    {"course_code": "CS 325", "reason": "Introduction to Bioinformatics — general CS elective (upper-level) for major elective credits."},
+    {"course_code": "ENG 225", "reason": "World Literatures — Arts & Humanities credit to complete A&H requirement (different prefix from PHRE)."},
+    {"course_code": "CS 455", "reason": "Computer Security Fundamentals — additional Systems/General CS elective to meet major elective needs."},
+    {"course_code": "CS 497", "reason": "Computer Science Capstone Experience — required major capstone to complete BS degree."},
+    {"course_code": "CS 490", "reason": "Automata Theory & Formal Languages — upper-level CS elective supporting theoretical major requirements."},
+    {"course_code": "CS 484", "reason": "CS Elective (upper-level project/research) — counts toward general CS elective and upper-level credit totals."},
+    {"course_code": "CS 460", "reason": "Computer Graphics — upper-level CS elective to help reach 40 upper-level credits."},
+    {"course_code": "ART 203", "reason": "Introduction to the Visual Arts — completes Arts & Humanities requirement from a second A&H prefix."}
+  ],
+  "text": "## Your Course Plan\n\n**Current Semester (In Progress):**\n- TRU 120 (FYS: Introduction to Language) (In Progress)\n- CS 100 (Computer Science Seminar) (In Progress)\n- CS 180 (Foundations of Computer Science I) (In Progress)\n- MATH 198 (Analytic Geom & Calc I) (In Progress)\n\n**Next Semester (Registered):**\n- CS 181 (Foundations of Computer Science II) (Registered / In Progress)\n- CS 191 (Computing Structures) (Registered / In Progress)\n- CS 333 (Computer Systems Architecture) (Registered / In Progress)\n- MATH 263 (Analytic Geom & Calc II) (Registered / In Progress)\n- PHRE 186 (Introduction to Philosophy) (Registered / In Progress)\n\n**Future Semesters (recommended):**\n- Fall 2026:\n  - CS 250, CS 260, DATA 222, STAT 290, ENG 190\n- Spring 2027:\n  - CS 310, CS 291, MATH 285, POL 161, CS 430\n- Fall 2027:\n  - CS 315, CS 390, DATA 322, COMM 170, PHYS 195 (with lab)\n- Spring 2028:\n  - CS 345, CS 370, CS 480, DATA 520, JINS 303\n- Fall 2028:\n  - CS 495, MATH 264, SOAN 190, CS 325, ENG 225, CS 455\n- Spring 2029:\n  - CS 497, CS 490, CS 484, CS 460, ART 203\n\nRationale: This plan follows the Computer Science sample sequence while respecting your current registrations. Core CS prerequisites are sequenced so each advanced CS course has its prerequisites completed beforehand; general education (writing, speaking, social, STEM lab, and arts & humanities) and the Data Science minor requirements are front-loaded early to ensure on-time graduation and fulfillment of BS and minor rules."
+}
+

@@ -1,0 +1,44 @@
+Chat History - 2025-11-09 23:35:39
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    {"course_code": "CS 100", "reason": "Computer Science seminar (In Progress)"},
+    {"course_code": "CS 180", "reason": "Foundations of CS I (In Progress)"},
+    {"course_code": "MATH 198", "reason": "Calculus I (In Progress)"},
+    {"course_code": "TRU 120", "reason": "First Year Seminar (In Progress)"},
+    {"course_code": "INDV 116", "reason": "Free elective / orientation (Already passed)"},
+    {"course_code": "CS 181", "reason": "Foundations of CS II (In Progress)"},
+    {"course_code": "CS 191", "reason": "Computing Structures (In Progress)"},
+    {"course_code": "CS 333", "reason": "Computer Systems Architecture (In Progress)"},
+    {"course_code": "MATH 263", "reason": "Calculus II (In Progress)"},
+    {"course_code": "PHRE 186", "reason": "Intro to Philosophy (In Progress)"},
+    {"course_code": "ENG 190", "reason": "Writing as Critical Thinking (Communication Skills requirement)"},
+    {"course_code": "COMM 170", "reason": "Public Speaking (Speaking requirement for Communication Skills)"},
+    {"course_code": "CHEM 131", "reason": "Chemical Principles II (Lab science to complete STEM Perspective)"},
+    {"course_code": "STAT 190", "reason": "Basic Statistics (Statistics Perspective & minor requirement)"},
+    {"course_code": "DATA 222", "reason": "Fundamentals of Data Science (Minor requirement)"},
+    {"course_code": "CS 260", "reason": "Object-Oriented Programming & Design (Major requirement and minor support)"},
+    {"course_code": "CS 291", "reason": "Models of Computation (Major requirement)"},
+    {"course_code": "CS 310", "reason": "Data Structures & Algorithms (Major requirement)"},
+    {"course_code": "CS 315", "reason": "Internet Programming (Major requirement)"},
+    {"course_code": "CS 345", "reason": "Cyberethics (Major requirement)"},
+    {"course_code": "CS 370", "reason": "Software Engineering (Major requirement)"},
+    {"course_code": "CS 420", "reason": "Systems elective (chosen to satisfy Systems Elective requirement)"},
+    {"course_code": "CS 430", "reason": "Database Systems (General CS elective; required for minor CS option but used here as elective)"},
+    {"course_code": "CS 325", "reason": "General CS elective (algorithms/tools elective)"},
+    {"course_code": "CS 380", "reason": "General CS elective (special topics/advanced programming elective)"},
+    {"course_code": "DATA 322", "reason": "Data Visualization / Intermediate Data Science (Minor requirement)"},
+    {"course_code": "MATH 285", "reason": "Matrix / Linear Algebra (Minor statistics option requirement)"},
+    {"course_code": "DATA 520", "reason": "Data Mining & Multivariate Statistics (Minor statistics option requirement)"},
+    {"course_code": "JINS 300", "reason": "JINS Junior Seminar (Interconnecting Perspectives requirement)"},
+    {"course_code": "CS 495", "reason": "Senior Computer Science Seminar (Capstone/major requirement)"},
+    {"course_code": "CS 497", "reason": "Computer Science Capstone Experience (Capstone/major requirement)"},
+    {"course_code": "HIST 326", "reason": "History of Missouri (fulfills Missouri Statute requirement & Social Perspective)"},
+    {"course_code": "SOAN 190", "reason": "Introduction to Sociology (Social Perspective)"},
+    {"course_code": "PHRE 188", "reason": "Ethics (Arts & Humanities Perspective)"},
+    {"course_code": "PHYS 185", "reason": "College Physics I with Lab (alternative lab science if needed for scheduling)"}
+  ],
+  "text": "## Your Course Plan\n\n**Current Semester (Fall 2025) (In Progress):**\n- CS 100 (1)\n- CS 180 (4)\n- MATH 198 (5)\n- TRU 120 (3)\n- INDV 116 (1, passed)\n\n**Spring 2026 (In Progress / Planned carrying over):**\n- CS 181 (3) (In Progress)\n- CS 191 (3) (In Progress)\n- CS 333 (4) (In Progress)\n- MATH 263 (4) (In Progress)\n- PHRE 186 (3) (In Progress)\n\n**Fall 2026 (15 credits):**\n- ENG 190 (3)\n- COMM 170 (3)\n- CHEM 131 (4)\n- CS 260 (3)\n- STAT 190 (2) [adjusted to fit 15 credits; schedule STAT 190 for 3 if offered]\n\n**Spring 2027 (15 credits):**\n- DATA 222 (3)\n- CS 291 (3)\n- CS 310 (3)\n- DATA 322 (3)\n- MATH 285 (3)\n\n**Fall 2027 (15 credits):**\n- CS 315 (3)\n- CS 345 (3)\n- CS 325 (3)\n- CS 420 (3)\n- JINS 300 (3)\n\n**Spring 2028 (15 credits):**\n- CS 370 (3)\n- CS 430 (3)\n- CS 380 (3)\n- DATA 520 (3)\n- HIST 326 (3)\n\n**Fall 2028 (15 credits):**\n- CS 495 (1)\n- CS 497 (3)\n- PHRE 188 (3)\n- SOAN 190 (3)\n- PHYS 185 (5) [or omit PHYS 185 and replace with appropriate 3-credit elective to keep 12-17 credit rule]\n\n**Spring 2029 (12-15 credits as needed to reach 120):**\n- Any remaining general CS elective or upper-level elective to reach 120+ credits and 40 upper-level credits (examples already listed in recommended_courses to be scheduled as needed)\n\nRationale: This plan preserves all current in-progress courses and sequences core CS courses so prerequisites are satisfied before upper-level classes, completes Communication Skills early, satisfies the Statistics Perspective and Data Science minor (statistics option), includes a lab science for the STEM perspective, fulfills the Missouri Statute and Social & Arts & Humanities perspectives, and schedules the senior seminar and capstone in the final year. Adjustments can be made for exact semester offerings and credit variations, but the plan targets ~120 total credits with 12–17 credits per future semester."
+}
+

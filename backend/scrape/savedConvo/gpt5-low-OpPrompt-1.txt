@@ -1,0 +1,38 @@
+Chat History - 2025-11-09 22:12:44
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    { "course_code": "CS 260", "reason": "Fulfills CS major core; requires CS 181 completed in Spring 2026." },
+    { "course_code": "CS 291", "reason": "Fulfills Models of Computation for CS major; sequenced after CS 191." },
+    { "course_code": "STAT 190", "reason": "Satisfies Statistics Perspective and minor statistics requirement." },
+    { "course_code": "PHYS 195", "reason": "Fulfills STEM lab science for BS/Dialogue; pairs well after Calculus I." },
+    { "course_code": "COMM 170", "reason": "Completes Speaking requirement under Communication Skills." },
+    { "course_code": "CS 310", "reason": "Core Data Structures & Algorithms; follows CS 181 and CS 191." },
+    { "course_code": "CS 315", "reason": "Internet Programming requirement for the CS major." },
+    { "course_code": "CS 345", "reason": "Cyberethics requirement for the CS major." },
+    { "course_code": "DATA 222", "reason": "Required for Data Science minor." },
+    { "course_code": "ENG 190", "reason": "Meets Writing as Critical Thinking under Communication Skills." },
+    { "course_code": "CS 370", "reason": "Software Engineering core; takes place after CS 260 and CS 310." },
+    { "course_code": "CS 390", "reason": "Systems elective (Operating Systems) for CS major; requires CS 310 and CS 333." },
+    { "course_code": "DATA 322", "reason": "Data Visualization option for Data Science minor (choose 322 or 324)." },
+    { "course_code": "MATH 285", "reason": "Linear Algebra for the Data Science minor Statistics Option." },
+    { "course_code": "PSYC 166", "reason": "Counts toward Social Perspective; provides second prefix in Social." },
+    { "course_code": "CS 430", "reason": "General CS elective (Database Systems) that also supports Data Science skills." },
+    { "course_code": "CS 460", "reason": "General CS elective (Computer Graphics/Advanced elective) to reach major elective credits." },
+    { "course_code": "JINS 303", "reason": "Junior Interdisciplinary Seminar (WE) required under Interconnecting Perspectives." },
+    { "course_code": "ENG 211", "reason": "Arts & Humanities with WE attribute; counts toward A&H and one additional WE." },
+    { "course_code": "POL 161", "reason": "Fulfills Missouri Statute and counts in Social Perspective." },
+    { "course_code": "CS 495", "reason": "Senior Computer Science Seminar required for CS major capstone sequence." },
+    { "course_code": "DATA 520", "reason": "Data Mining/Multivariate Statistics for the Data Science minor Statistics Option." },
+    { "course_code": "HIST 314", "reason": "WE Social Perspective course; also provides an additional Writing-Enhanced course." },
+    { "course_code": "MUSI 207", "reason": "Arts & Humanities Perspective course; diversifies A&H prefixes." },
+    { "course_code": "MATH 264", "reason": "Fulfills BS additional STEM course option and strengthens quantitative background." },
+    { "course_code": "CS 497", "reason": "Computer Science Capstone Experience; completes CS major capstone." },
+    { "course_code": "ECON 200", "reason": "Social Perspective course to complete 9 credits across multiple prefixes." },
+    { "course_code": "DATA 324", "reason": "Advanced Data Science elective to deepen the minor and upper-division credit." },
+    { "course_code": "ART 203", "reason": "Aesthetics course that rounds out Dialogues and total credits toward 120." }
+  ],
+  "text": "## Your Course Plan\nCurrent and In-Progress Courses (do not repeat these in registration): Fall 2025: CS 100 (In Progress), CS 180 (In Progress), MATH 198 (In Progress), TRU 120 (In Progress). Spring 2026: CS 181 (In Progress), CS 191 (In Progress), CS 333 (In Progress), MATH 263 (In Progress), PHRE 186 (In Progress).\n- Fall 2026: CS 260, CS 291, STAT 190, PHYS 195, COMM 170\n- Spring 2027: CS 310, CS 315, CS 345, DATA 222, ENG 190\n- Fall 2027: CS 370, CS 390, DATA 322, MATH 285, PSYC 166\n- Spring 2028: CS 430, CS 460, JINS 303, ENG 211, POL 161\n- Fall 2028: CS 495, DATA 520, HIST 314, MUSI 207, MATH 264\n- Spring 2029: CS 497, ECON 200, DATA 324, ART 203\nRationale: This plan sequences CS major courses from foundations through systems and software engineering, schedules capstone (CS 495/497) in the final year, and completes the Data Science minor via STAT 190, DATA 222, DATA 322, MATH 285, and DATA 520. Dialogues requirements are satisfied: Communication (ENG 190, COMM 170), Social (POL 161, PSYC 166, ECON 200; Missouri Statute via POL 161), STEM (MATH 198, CS 180, PHYS 195), Arts & Humanities (PHRE 186, ENG 211, MUSI 207), Statistics Perspective (STAT 190), JINS (JINS 303), plus two additional Writing-Enhanced courses (ENG 211, HIST 314). Prerequisites and sequencing have been validated (e.g., CS 260/291 before CS 310, CS 310/333 before CS 390, CS 260/310 before CS 370); loads average 15–17 credits to reach 120 by graduation."
+}
+

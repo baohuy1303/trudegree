@@ -1,0 +1,5 @@
+Chat History - 2025-11-09 15:33:06
+==================================================
+User: Give me a 4 year plan
+Agent: {"recommended_courses":[],"text":"Error: Invalid response format. Please try again."}
+

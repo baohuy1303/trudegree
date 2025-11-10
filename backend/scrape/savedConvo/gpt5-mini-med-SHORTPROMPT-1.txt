@@ -1,0 +1,40 @@
+Chat History - 2025-11-09 21:28:46
+==================================================
+User: Give me a 4 year plan
+Agent: {
+  "recommended_courses": [
+    {"course_code": "CS 250", "reason": "Systems Programming — follows CS 181 and required in major sequence"},
+    {"course_code": "CS 260", "reason": "Object-Oriented Programming & Design — required for major, follows CS 181"},
+    {"course_code": "STAT 190", "reason": "Fulfills Statistics Perspective and Data Science minor statistics requirement"},
+    {"course_code": "ENG 190", "reason": "Writing as Critical Thinking — completes Communication Skills writing requirement"},
+    {"course_code": "BIOL 107", "reason": "Lab Science (STEM Perspective) — fulfills lab science requirement"},
+    {"course_code": "CS 291", "reason": "Models of Computation — required major course after CS 191"},
+    {"course_code": "CS 310", "reason": "Data Structures and Algorithms — core major requirement, follows CS 250/260"},
+    {"course_code": "CS 315", "reason": "Internet Programming — major elective (Area A) to satisfy major elective requirements"},
+    {"course_code": "MATH 285", "reason": "Linear Algebra — required for Data Science minor (matrix/linear algebra requirement)"},
+    {"course_code": "COMM 170", "reason": "Public Speaking — completes Communication Skills speaking requirement"},
+    {"course_code": "CS 345", "reason": "Cyberethics — required major course"},
+    {"course_code": "CS 370", "reason": "Software Engineering — required major course"},
+    {"course_code": "DATA 222", "reason": "Fundamentals of Data Science — required support/BS and Data Science minor core"},
+    {"course_code": "DATA 324", "reason": "Data Visualization — fulfills Data Science minor visualization requirement"},
+    {"course_code": "HIST 326", "reason": "History of Missouri — satisfies Missouri Statute social-perspective requirement"},
+    {"course_code": "CS 390", "reason": "Operating Systems — systems elective (Area B) for major requirements"},
+    {"course_code": "CS 455", "reason": "Computer Security Fundamentals — systems elective (Area B) / major elective"},
+    {"course_code": "JINS 303", "reason": "JINS WE course (Computers & Natural Lang) — fulfills JINS Interconnecting WE Junior Seminar"},
+    {"course_code": "PSYC 166", "reason": "General Psychology — fills Social Perspective credits from a second prefix"},
+    {"course_code": "ECON 201", "reason": "Principles of Microeconomics — additional Social Perspective credit from another prefix"},
+    {"course_code": "CS 495", "reason": "Senior Computer Science Seminar — required capstone seminar (taken Junior year per plan)"},
+    {"course_code": "CS 470", "reason": "Computer Networks — systems elective (Area B) supporting major breadth"},
+    {"course_code": "CS 325", "reason": "Introduction to Bioinformatics — general CS elective (Area C) to increase upper-level credits"},
+    {"course_code": "CS 435", "reason": "Parallel & Distributed Processing — area B systems elective for major"},
+    {"course_code": "ENG 211", "reason": "Perspectives on Literature & Film — Arts & Humanities credit from a different prefix"},
+    {"course_code": "ART 203", "reason": "Intro to the Visual Arts — Arts & Humanities credit from a different prefix"},
+    {"course_code": "CS 497", "reason": "Computer Science Capstone Experience — required major capstone (final project)"},
+    {"course_code": "CS 430", "reason": "Database Systems — major elective and supports Data Science applications"},
+    {"course_code": "CS 480", "reason": "Artificial Intelligence — Area C elective to meet general CS elective requirements"},
+    {"course_code": "SOAN 191", "reason": "Introduction to Anthropology — additional Social Perspective breadth / elective"},
+    {"course_code": "STAT 290", "reason": "Statistics — additional statistical background useful for Data Science minor and requirements"}
+  ],
+  "text": "Fall 2025 (Current — In Progress):\n- TRU 120 (In Progress)\n- CS 100 (In Progress)\n- CS 180 (In Progress)\n- MATH 198 (In Progress)\n\nSpring 2026 (Registered / In Progress):\n- CS 181 (In Progress)\n- CS 191 (In Progress)\n- CS 333 (In Progress)\n- MATH 263 (In Progress)\n- PHRE 186 (In Progress)\n\nFall 2026 (Semester 3 - Recommended):\n- CS 250\n- CS 260\n- STAT 190\n- ENG 190\n- BIOL 107\n\nSpring 2027 (Semester 4 - Recommended):\n- CS 291\n- CS 310\n- CS 315\n- MATH 285\n- COMM 170\n\nFall 2027 (Semester 5 - Recommended):\n- CS 345\n- CS 370\n- DATA 222\n- DATA 324\n- HIST 326\n\nSpring 2028 (Semester 6 - Recommended):\n- CS 390\n- CS 455\n- JINS 303\n- PSYC 166\n- ECON 201\n\nFall 2028 (Semester 7 - Recommended):\n- CS 495\n- CS 470\n- CS 325\n- CS 435\n- ENG 211\n- ART 203\n\nSpring 2029 (Semester 8 - Recommended):\n- CS 497\n- CS 430\n- CS 480\n- SOAN 191\n- STAT 290\n\nRationale: This plan follows the Computer Science sample-sequence and preserves all in-progress registrations. General-education requirements (Communication Skills, Social, STEM lab, Arts & Humanities, Statistics) and the Data Science minor requirements are front-loaded so prerequisites for upper-level CS courses and the capstone are satisfied on schedule."
+}
+
