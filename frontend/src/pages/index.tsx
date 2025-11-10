@@ -334,6 +334,7 @@ export default function IndexPage() {
                             }
                             isLoading={isSubmitting}
                             className="w-full"
+                            variant="shadow"
                         >
                             {isSubmitting ? 'Processing...' : 'Send'}
                         </Button>

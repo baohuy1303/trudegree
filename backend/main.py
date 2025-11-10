@@ -13,13 +13,13 @@ app = FastAPI()
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# In-memory session storage (use Redis or database in production)
+# In-memory session storage
 sessions = {}
 
 @app.get("/")
@@ -106,7 +106,8 @@ async def process_pdf(
 @app.post("/api/chat")
 async def chat(
     session_id: str = Form(...),
-    message: str = Form(...)
+    message: str = Form(...),
+    is_long_planning_mode: bool = Form(False)
 ):
     """Continue conversation with existing session"""
     try:
@@ -114,8 +115,20 @@ async def chat(
             raise HTTPException(status_code=404, detail="Session not found")
         
         session = sessions[session_id]
-        agent = session["agent"]
         history = session["history"]
+        parsed_degreeworks = session["parsed_degreeworks"]
+        
+        # Get new reasoning effort based on mode
+        new_reasoning_effort = "medium" if is_long_planning_mode else "low"
+        current_reasoning_effort = session.get("reasoning_effort", "low")
+        
+        # Recreate agent if reasoning effort changed
+        if new_reasoning_effort != current_reasoning_effort:
+            agent = create_agent_with_degreeworks(parsed_degreeworks, new_reasoning_effort)
+            session["agent"] = agent
+            session["reasoning_effort"] = new_reasoning_effort
+        else:
+            agent = session["agent"]
         
         # Run agent with new message
         agent_result = run_agent(message, history, agent)

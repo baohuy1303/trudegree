@@ -9,8 +9,8 @@ interface LoadingProgressProps {
 
 const PDF_STEPS_NORMAL = [
     { label: 'Uploading PDF', duration: 5 },
-    { label: 'Parsing PDF content', duration: 30 },
-    { label: 'Extracting course data', duration: 25 },
+    { label: 'Parsing PDF content', duration: 40 },
+    { label: 'Extracting course data', duration: 40 },
     { label: 'Preparing AI agent', duration: 5 },
     { label: 'Generating response', duration: 30 },
     { label: 'Finalizing recommendations', duration: 25 },
@@ -19,27 +19,27 @@ const PDF_STEPS_NORMAL = [
 
 const PDF_STEPS_LONG = [
     { label: 'Uploading PDF', duration: 5 },
-    { label: 'Parsing PDF content', duration: 35 },
-    { label: 'Extracting course data', duration: 30 },
+    { label: 'Parsing PDF content', duration: 40 },
+    { label: 'Extracting course data', duration: 40 },
     { label: 'Preparing AI agent', duration: 5 },
-    { label: 'Creating comprehensive plan', duration: 50 },
-    { label: 'Validating course sequences', duration: 40 },
-    { label: 'Finalizing recommendations', duration: 25 },
+    { label: 'Creating comprehensive plan', duration: 80 },
+    { label: 'Validating course sequences', duration: 60 },
+    { label: 'Finalizing recommendations', duration: 35 },
     { label: 'Completing analysis', duration: 5 },
 ];
 
 const CHAT_STEPS_NORMAL = [
-    { label: 'Processing your question', duration: 15 },
+    { label: 'Processing your question', duration: 10 },
     { label: 'Analyzing degree requirements', duration: 20 },
     { label: 'Generating recommendations', duration: 20 },
-    { label: 'Finalizing response', duration: 15 },
+    { label: 'Finalizing response', duration: 5 },
 ];
 
 const CHAT_STEPS_LONG = [
-    { label: 'Processing your question', duration: 20 },
-    { label: 'Analyzing degree requirements', duration: 30 },
-    { label: 'Creating comprehensive plan', duration: 40 },
-    { label: 'Validating course sequences', duration: 20 },
+    { label: 'Processing your question', duration: 15 },
+    { label: 'Analyzing degree requirements', duration: 40 },
+    { label: 'Creating comprehensive plan', duration: 70 },
+    { label: 'Validating course sequences', duration: 40 },
     { label: 'Finalizing response', duration: 10 },
 ];
 
@@ -55,8 +55,8 @@ export default function LoadingProgress({
     const steps =
         mode === 'pdf'
             ? isLongPlanning
-              ? PDF_STEPS_LONG
-              : PDF_STEPS_NORMAL
+                ? PDF_STEPS_LONG
+                : PDF_STEPS_NORMAL
             : isLongPlanning
               ? CHAT_STEPS_LONG
               : CHAT_STEPS_NORMAL;
@@ -77,7 +77,10 @@ export default function LoadingProgress({
 
         const updateProgress = () => {
             const elapsed = (Date.now() - overallStartTime) / 1000;
-            const overallPercent = Math.min((elapsed / totalDuration) * 100, 95);
+            const overallPercent = Math.min(
+                (elapsed / totalDuration) * 100,
+                95
+            );
 
             setOverallProgress(overallPercent);
 
@@ -85,8 +88,7 @@ export default function LoadingProgress({
             let accumulatedTime = 0;
             for (let i = 0; i < steps.length; i++) {
                 if (i === currentStepIndex) {
-                    const stepElapsed =
-                        (Date.now() - stepStartTime) / 1000;
+                    const stepElapsed = (Date.now() - stepStartTime) / 1000;
                     const stepPercent = Math.min(
                         (stepElapsed / steps[i].duration) * 100,
                         100
@@ -95,7 +97,10 @@ export default function LoadingProgress({
                     setCurrentStep(i);
 
                     // Move to next step if current step is complete
-                    if (stepElapsed >= steps[i].duration && i < steps.length - 1) {
+                    if (
+                        stepElapsed >= steps[i].duration &&
+                        i < steps.length - 1
+                    ) {
                         currentStepIndex = i + 1;
                         stepStartTime = Date.now();
                     }
@@ -180,11 +185,11 @@ export default function LoadingProgress({
                     <p className="text-xs text-default-500 text-center mt-4">
                         {mode === 'pdf'
                             ? isLongPlanning
-                              ? 'This usually takes 2-3 minutes (60-80s parsing + ~120s planning)'
-                              : 'This usually takes ~2 minutes (60s parsing + 60s response)'
+                                ? 'This usually takes 4-5 minutes (70-90s PDF processing + 150-200s planning)'
+                                : 'This usually takes 2-2.5 minutes (70-90s PDF processing + 50-60s response)'
                             : isLongPlanning
-                              ? 'Long planning mode may take 2-3 minutes'
-                              : 'This usually takes 40-70 seconds'}
+                              ? 'Long planning mode may take 2.5-3.5 minutes'
+                              : 'This usually takes 50-60 seconds'}
                     </p>
                 </div>
             </CardBody>
