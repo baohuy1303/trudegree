@@ -7,7 +7,7 @@ import json
 import re
 import os
 
-JSON_FILE = "truman_degree.json"
+JSON_FILE = os.path.join(os.path.dirname(__file__), "data", "truman_degree.json")
 
 def scrape_web(website):
     print("Scraping website:", website)

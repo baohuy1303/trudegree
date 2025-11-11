@@ -1,0 +1,174 @@
+{
+  "program": "Art (BA), Studio Track",
+  "semesters": [
+    {
+      "semester": "Semester 1",
+      "courses": [
+        {
+          "code": "TRU 120",
+          "name": "First Year Seminar",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "ART 101",
+          "name": "Observational Drawing",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "ART 201",
+          "name": "Design, Software, and Process",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 2",
+      "courses": [
+        {
+          "code": "ART 202",
+          "name": "Figure Drawing",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "code": "ART 201",
+          "name": "Design, Software, and Process",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6-9 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 3",
+      "courses": [
+        {
+          "raw": "- Major Studio I***"
+        },
+        {
+          "raw": "- Art 2/3XX Elective"
+        },
+        {
+          "code": "ART 222",
+          "name": "Global Art to 1400",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 4",
+      "courses": [
+        {
+          "code": "ART 315",
+          "name": "Intermediate Drawing Exploration",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- Dialogues Curriculum course (9-12 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 5",
+      "courses": [
+        {
+          "raw": "- Major Studio II"
+        },
+        {
+          "code": "ART 326",
+          "name": "Contemporary Art",
+          "credits": 3,
+          "note": ""
+        },
+        {
+          "raw": "- JINS 3XX: WE/____________ (3 cr)"
+        },
+        {
+          "raw": "- Elective(s) and/or Dialogues Curriculum course (3-6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 6",
+      "courses": [
+        {
+          "raw": "- ART 2/3xx Elective"
+        },
+        {
+          "raw": "- ART 3/4xx"
+        },
+        {
+          "code": "ART 303",
+          "name": "Art Bus: Encounters with Professional Practices",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "raw": "- Elective(s) and/or Dialogues Curriculum course (6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 7",
+      "courses": [
+        {
+          "raw": "- Major Studio III"
+        },
+        {
+          "code": "ART 425",
+          "name": "Capstone Experience/Seminar",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "raw": "- Elective(s) (3-6 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6 cr)"
+        }
+      ]
+    },
+    {
+      "semester": "Semester 8",
+      "courses": [
+        {
+          "raw": "- Major Studio IV"
+        },
+        {
+          "code": "ART 426",
+          "name": "Capstone Experience: Exhibition",
+          "credits": 1,
+          "note": ""
+        },
+        {
+          "raw": "- Elective(s) (3-6 cr)"
+        },
+        {
+          "raw": "- Dialogues Curriculum course (6 cr)"
+        }
+      ]
+    }
+  ],
+  "electives": {
+    "area_a": [],
+    "area_b": [],
+    "area_c": []
+  },
+  "notes": [
+    "Portfolio required",
+    "Civics Exam recommended in first year"
+  ]
+}
