@@ -31,7 +31,7 @@ Video Demo: https://drive.google.com/file/d/1L0BMF_Niqk9fJZWkLi_wIiR5AXqBjSSu/vi
 - **Routing**: React Router v6
 - **HTTP Client**: Axios
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -202,5 +202,5 @@ TruDegree is an AI-powered assistant and should be used as a supplementary plann
 
 ---
 
-**Made with ❤️ for Truman State University students**
+**Made with ❤️ for Truman State University students from Huy B. Huynh**
 
