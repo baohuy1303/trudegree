@@ -12,7 +12,7 @@ import json
 import re
 from timeit import default_timer as timer
 
-llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model_name="gpt-4o", temperature=0.0)
+llm = ChatOpenAI(api_key=os.getenv("BENCHMARK_KEY"), model_name="gpt-4o", temperature=0.0)
 
 def clean_pdf_text(text : str) -> str:
     """Clean PDF text to reduce tokens"""
