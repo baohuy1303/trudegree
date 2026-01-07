@@ -3,19 +3,20 @@
 **Your AI Academic Advisor for Truman State University**
 
 TruDegree is an intelligent academic planning assistant that helps Truman State University students plan their courses, stay on track for graduation, and explore academic paths tailored to their interests.
+Video Demo: https://drive.google.com/file/d/1L0BMF_Niqk9fJZWkLi_wIiR5AXqBjSSu/view?usp=sharing 
 
-## ✨ Features
+## Features
 
-- **🎯 Zero Guesswork**: Get specific course recommendations - no more placeholders or "missing requirements"
-- **⚡ Personalized Planning**: AI-powered recommendations based on your degree audit and academic interests
-- **🚀 Lightning Fast**: Get comprehensive academic plans in minutes, not hours
-- **💬 Interactive Chat**: Ask questions about your degree requirements, course options, and graduation timeline
-- **📋 Smart PDF Parsing**: Upload your DegreeWorks audit PDF and let the AI understand your academic progress
-- **🔄 Two Modes**:
+- **Zero Guesswork**: Get specific course recommendations - no more placeholders or "missing requirements"
+- **Personalized Planning**: AI-powered recommendations based on your degree audit and academic interests
+- **Lightning Fast**: Get comprehensive academic plans in minutes, not hours
+- **Interactive Chat**: Ask questions about your degree requirements, course options, and graduation timeline
+- **Smart PDF Parsing**: Upload your DegreeWorks audit PDF and let the AI understand your academic progress
+- **Two Modes**:
   - **Quick Q&A Mode** (~30 seconds): Fast answers to specific questions
   - **Long Planning Mode** (~2-3 minutes): Comprehensive 4-year academic planning
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend
 - **Framework**: FastAPI (Python)
@@ -85,11 +86,12 @@ npm run dev
 
 The frontend will be available at `http://localhost:5173`
 
-## 📖 Usage
+## Usage
 
 1. **Export Your DegreeWorks Audit**
    - Log into your DegreeWorks account
    - Export your degree audit as a PDF (Letter Portrait format recommended)
+   - Hide your name if you prefer to not expose that (DegreeWorks audit's only privacy issue is showing your name)
 
 2. **Upload & Ask**
    - Upload your DegreeWorks PDF
@@ -102,7 +104,7 @@ The frontend will be available at `http://localhost:5173`
    - Explore different academic paths
    - Get specific course suggestions
 
-## 🎯 Example Prompts
+## Example Prompts
 
 - "Create a 4-year plan for me to graduate on time"
 - "What courses should I take next semester?"
@@ -110,7 +112,7 @@ The frontend will be available at `http://localhost:5173`
 - "Suggest electives that align with a career in data science"
 - "Help me plan a study abroad semester"
 
-## 🛠️ API Endpoints
+## API Endpoints
 
 ### `POST /api/pdf`
 Upload a DegreeWorks PDF and start a new session
@@ -128,7 +130,7 @@ Continue an existing conversation
   - `is_long_planning_mode`: Boolean for planning mode
 - **Returns**: AI response with course recommendations
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 trudegree/
@@ -166,33 +168,31 @@ trudegree/
     └── vite.config.ts         # Vite configuration
 ```
 
-## 🚧 Roadmap & Future Enhancements
+## Roadmap & Future Enhancements
 
 We're constantly working to make TruDegree even better! Here are some exciting features planned for future releases:
 
-### 🎓 RateMyProfessor Integration
+### RateMyProfessor Integration
 Automatically scrape and integrate professor ratings to recommend not just *what* courses to take, but *who* to take them with. Get personalized recommendations based on:
 - Professor ratings and reviews
 - Teaching style matching your learning preferences
 - Course difficulty and workload insights
 
-### 💾 User Persistence with Redis
+### User Persistence with Redis
 Implement Redis-based session management for:
 - **Persistent chat history** across devices
 - **Saved academic plans** that you can return to anytime
 - **Faster session retrieval** and improved performance
 - **Multi-device sync** - start planning on your laptop, continue on your phone
 
-### 🔍 Vector Database for University Catalog (High Priority!)
-If Truman State University provides full catalog access, we can implement a **vector database solution** for dramatically improved performance:
+### Database for University Catalog (High Priority!)
+Implementing a web crawler of the university's entire catalog:
 
-- **⚡ 10x Faster Queries**: Instant course lookups vs. current text parsing
-- **🎯 More Accurate Recommendations**: Semantic search understands course relationships and prerequisites
-- **🧠 Smarter Context**: AI agent can understand course descriptions, learning outcomes, and cross-listings
-- **📊 Better Planning**: Identify prerequisite chains, co-requisites, and optimal course sequences
-- **🔄 Real-time Updates**: Sync with university catalog changes automatically
-
-**Technical Implementation**: Using vector embeddings (ChromaDB/Pinecone) to enable semantic search over course catalogs, degree requirements, and academic policies - making the AI agent significantly more intelligent and responsive.
+- **10x Faster Queries**: Instant course lookups vs. current text parsing
+- **More Accurate Recommendations**: Agent can query the catalog based on needs instead of having to reason and scrape sample plans, degreeworks, and gen-ed courses
+- **Smarter Context**: AI agent can understand course descriptions, learning outcomes, and cross-listings
+- **Better Planning**: Identify prerequisite chains, co-requisites, and optimal course sequences
+- **Real-time Updates**: Sync with university catalog changes automatically
 
 ---
 
