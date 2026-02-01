@@ -5,6 +5,9 @@
 TruDegree is an intelligent academic planning assistant that helps Truman State University students plan their courses, stay on track for graduation, and explore academic paths tailored to their interests.
 Video Demo: https://drive.google.com/file/d/1L0BMF_Niqk9fJZWkLi_wIiR5AXqBjSSu/view?usp=sharing 
 
+![Screenshot1](https://github.com/baohuy1303/trudegree/blob/main/frontend/public/screenshots/TruDegree4.png?raw=true)
+![Screenshot2](https://github.com/baohuy1303/trudegree/blob/main/frontend/public/screenshots/TruDegree5.png?raw=true)
+
 ## Features
 
 - **Zero Guesswork**: Get specific course recommendations - no more placeholders or "missing requirements"
